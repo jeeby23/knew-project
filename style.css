@@ -1,0 +1,360 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+.container-fliud{
+    position: relative;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    background: url(./img/home\ pic.jpg) no-repeat center center/cover;
+    /* background-image: linear-gradient( to top,rgba(0,0,0,.2),rgba(0,0,0,.1)); */
+    /* object-fit: contain; */
+}
+nav{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    background-color: #000;
+    color: #fff;
+    padding: 0 80px;
+    height: 80px;
+    line-height: 80px;
+  
+}
+nav .logo{
+    color: #fff;
+    text-decoration: none;
+    font-size: 2.5rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+}
+ul{
+    display: flex;
+    position: relative;
+}
+ul li{
+    list-style: none;
+}
+ul li a{
+    color: #fff;
+    text-decoration: none;
+    letter-spacing: 1px;
+    font-size: 1.5rem;
+    padding: 10px 20px;
+   
+}
+ul li:hover a,.checked{
+    background-color: aqua;
+    border-radius: 5px;
+}
+.cancelBtn,.loginBtn{
+    position: relative;
+    font-size: 1.8rem;
+    cursor: pointer;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: auto 0;
+    
+}
+.cancelBtn{
+   display: none;
+    background-color: #ff5733;
+    width: 50px;
+    border-radius: 5px;
+}
+.house{
+    /* margin: 110px 200px; */
+   text-align: center;
+   margin: auto;
+}
+.house h1,.hero h2{
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 800;
+    letter-spacing: 2px;
+    color:aqua;
+}
+.low{
+    color: #ff5733;
+    text-decoration: line-through;
+}
+.house p{
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 40px;
+}
+.hero p{
+    color: #fff;
+        font-size: 25px;
+        margin-bottom: 40px;
+}
+.house a,.hero a{
+    text-decoration: none;
+    color: black;
+    background-color: aqua;
+    width: 60px;
+    height: 20px;
+    padding: 20px;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    position: relative;
+}
+.box a{
+   background: transparent;
+   padding-left: 40px;
+background: rgb(85, 213, 245);
+    border-radius: 50%;
+}
+
+.pit{
+    position: absolute;
+    left: 10%;
+    top: 20%;
+
+}
+.pic{
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+}
+
+.box-1,.box-2,.box-3,.box-4{
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    height: 200px;
+    max-height: 35vh;
+    -webkit-box-shadow: 0px 10px 18px rgba(0,0,0,.3);
+    box-shadow: 0 0 5px 5px rgba(255,255,255,.2);
+}
+.box{
+    margin: 20px; 
+}
+.one,.two{
+    position: relative;
+    left:60%;
+    bottom: -180px;
+}
+.rid{
+    min-height: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+   align-content: last baseline;
+}
+.rid > div{
+    flex-basis: calc(20% - 200px);
+    
+    
+}
+.back-video{
+    position: absolute;
+    right:0;
+    bottom: 0;
+    z-index: -1;
+    /* height: 100vh; */
+    width: 100%;
+}
+
+.loginBtn:hover{
+    background-color: #00ff7f;
+    border-radius: 5px;
+}
+.formpage{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    min-height: calc(100% - 80px);
+    top: 80px;
+    color: #fff;
+    backdrop-filter: blur(8px) brightness(35%);
+    scale: 0;
+}
+form h2{
+    text-align: center;
+    font-size: 6em;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+.entryField{
+    position: relative;
+    height: 90px;
+    width: 700px;
+    background-color: red;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.entryField input{
+    outline: none;
+   height: 100%;
+   width: 100%;
+   border-radius: 10px;
+   border: 2px solid rgba(254,254,254.6);
+   border-color: transparent;
+}
+.entryField input[type="text"],
+.entryField input[type="password"]{
+    font-size: 1.5em;
+    padding-left: 30px;
+    padding-right: 120px;
+    color: #000;
+    
+}
+.entryField input[type="text"]:focus,
+.entryField input[type="password"]:focus{
+    color: #00ff7f;
+    scale: 1.1;
+    border-left: 3px solid #00ff7f;
+    transition: 0.3s ease;
+}
+.entryField input[type="submit"]{
+    color: #000;
+    background-color: #fff;
+    font-size: 2em;
+}
+.entryField input[type="submit"]:focus{
+    color: #fff;
+    background-color: #00ff7f;
+    cursor: pointer;
+    border: none;
+}
+.entryField span{
+    position: absolute;
+    font-size: 2em;
+    right: 0;
+    top: 50%;
+    translate: 0 -50%;
+    padding: 5px 30px;
+    color: #000;
+    border-left: 2px solid rgba(254, 254, 254, .6);
+}
+.remForPw{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.2em;
+}
+.remForPw input{
+    margin-right: 10px;
+}
+.remForPw a{
+    color: #fff;
+}
+.newAccount{
+    text-align: center;
+}
+.newAccount a {
+    text-decoration: none;
+    color: #18a2f2;
+}
+.head{
+  padding: 0 0 0 350px;
+    /* position: absolute;
+    right: 3px; */
+}
+.move{
+   text-align: right;
+   position: relative;
+   top: -50px;
+   right: 5px;
+   display: none;
+}
+.sidebar{
+  
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100vh;
+    width: 250px;
+    backdrop-filter: blur(10px);
+    z-index: 999;
+    background-color: #ffffff77;
+    box-shadow: -10px 0 10px rgba(0, 0, 0, .1);
+    display: none;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start; 
+}
+.sidebar li{
+    width: 100%;
+
+}
+.sidebar a{
+    width: 100%;
+    color: #000;
+}
+@media (min-aspeect-ratio: 16/9) {
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+    
+}
+@media (max-aspeect-ratio: 16/9) {
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+    
+}
+@media(max-width:800px){
+    body{
+        margin: 0;
+        box-sizing: border-box;
+        padding: 0;
+        /* overflow-x: hidden; */
+    }
+    .head{
+        display: none;
+       
+    }
+        .one,
+        .two {
+            display: none;
+           
+           
+            
+        }
+    .container-fliud{
+        background: #000;
+       
+    }
+     .move{
+    display: block;
+        }
+    .hide{
+       display: block;
+    }
+   .house{
+       margin: 0;
+       text-align: center;
+       padding: 150px 0;
+   }
+
+   .house h1 {
+       text-decoration: none;
+       font-size: 30px;
+       font-weight: 800;
+       letter-spacing: 2px;
+       color: aqua;
+   }
+
+  
+         }
+
+@media screen and(max-width:400px){
+
+}
+    
